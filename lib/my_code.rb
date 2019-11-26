@@ -35,38 +35,48 @@ def map_to_square(soure_array)
   new_array
 end
 
-def reduce_to_total(source_array, starting_point)
-  # result = 0 
-  # index = 0 
-  result = 0
-  
-  if starting_point
-    #result = source_array.sum
-    # binding.pry
-    result = starting_point + source_array.sum
-  else 
-    result = source_array.sum
+def reduce_to_total(source_array, starting_point=nil)
+  result = 0   
+  if starting_point == nil
+    result = source_array.sum 
+  else
+    result = starting_point + source_array.sum 
   end
   result
-  
 end
-  # if source_array[index] == starting_point
-  #   result += source_array[index]
-  #   ind = index
-  # index += 1
-  # else
-  #   result1 = source_array.sum
-  # end 
-  # end
-  # #binding.pry
-  # new_arr = source_array[ind..-1]
-  # result1 = 0 
+
+# def reduce_to_total(source_array, starting_point)
+#   # result = 0 
+#   # index = 0 
+#   result = 0
   
-  # while index < new_arr.length do 
-  #   result1 += new_arr[index]
-  # index += 1  
-  # end
-  # result1
+#   if starting_point
+#     #result = source_array.sum
+#     # binding.pry
+#     result = starting_point + source_array.sum
+#   else 
+#     result = source_array.sum
+#   end
+#   result
+  
+# end
+#   # if source_array[index] == starting_point
+#   #   result += source_array[index]
+#   #   ind = index
+#   # index += 1
+#   # else
+#   #   result1 = source_array.sum
+#   # end 
+#   # end
+#   # #binding.pry
+#   # new_arr = source_array[ind..-1]
+#   # result1 = 0 
+  
+#   # while index < new_arr.length do 
+#   #   result1 += new_arr[index]
+#   # index += 1  
+#   # end
+#   # result1
  
 
 def reduce_to_all_true(source_array)
