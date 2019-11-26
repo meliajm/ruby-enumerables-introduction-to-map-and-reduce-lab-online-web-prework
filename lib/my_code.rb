@@ -45,17 +45,16 @@ def reduce_to_total(source_array, starting_point)
   index += 1
   else
     result1 = source_array.sum
-  end 
-  #binding.pry
-  new_arr = source_array[ind..-1]
-  result1 = 0 
+  # end 
+  # #binding.pry
+  # new_arr = source_array[ind..-1]
+  # result1 = 0 
   
-  while index < new_arr.length do 
-    result1 += new_arr[index]
-  index += 1  
-  end
-  result1
-  
+  # while index < new_arr.length do 
+  #   result1 += new_arr[index]
+  # index += 1  
+  # end
+  # result1
 end 
 
 def reduce_to_all_true(source_array)
