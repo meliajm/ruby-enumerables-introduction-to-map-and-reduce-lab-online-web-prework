@@ -43,6 +43,7 @@ def reduce_to_total(source_array, starting_point)
   else 
     starting_point + source_array.sum
   end
+  binding.pry
 end
   # if source_array[index] == starting_point
   #   result += source_array[index]
