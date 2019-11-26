@@ -38,7 +38,7 @@ end
 def reduce_to_total(source_array, starting_point)
   result = 0 
   index = 0 
-  result
+  source_array.sum
   # if source_array[index] == starting_point
   #   result += source_array[index]
   #   ind = index
