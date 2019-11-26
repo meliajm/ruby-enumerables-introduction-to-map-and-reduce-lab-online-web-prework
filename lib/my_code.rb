@@ -40,11 +40,13 @@ def reduce_to_total(source_array, starting_point)
   # index = 0 
   result = 0
   binding.pry
-  if starting_point == nil
-    result = source_array.sum
+  if starting_point
+    #result = source_array.sum
     # binding.pry
-  else 
     result = starting_point + source_array.sum
+  else 
+    result = source_array.sum
+    
     
   end
   result
