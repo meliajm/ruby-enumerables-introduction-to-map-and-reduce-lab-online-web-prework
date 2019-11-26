@@ -45,7 +45,7 @@ def reduce_to_total(source_array, starting_point)
   index += 1
   else
     result1 = source_array.sum
-  # end 
+  end 
   # #binding.pry
   # new_arr = source_array[ind..-1]
   # result1 = 0 
