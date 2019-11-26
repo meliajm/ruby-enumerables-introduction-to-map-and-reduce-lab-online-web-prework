@@ -36,14 +36,16 @@ def map_to_square(soure_array)
 end
 
 def reduce_to_total(source_array, starting_point)
-  result = 0 
-  index = 0 
+  # result = 0 
+  # index = 0 
+  result = 0
   if starting_point < source_array[-1]
-    source_array.sum
+    result = source_array.sum
   else 
-    starting_point + source_array.sum
+    result = starting_point + source_array.sum
   end
-  binding.pry
+  result
+  # binding.pry
 end
   # if source_array[index] == starting_point
   #   result += source_array[index]
