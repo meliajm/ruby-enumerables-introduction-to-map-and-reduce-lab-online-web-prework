@@ -46,8 +46,6 @@ def reduce_to_total(source_array, starting_point)
     result = starting_point + source_array.sum
   else 
     result = source_array.sum
-    
-    
   end
   result
   
