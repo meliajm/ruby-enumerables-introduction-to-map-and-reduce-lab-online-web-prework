@@ -41,9 +41,10 @@ def reduce_to_total(source_array, starting_point)
   result = 0
   if !starting_point 
     result = source_array.sum
+    binding.pry
   else 
     result = starting_point + source_array.sum
-    binding.pry
+    
   end
   result
   
