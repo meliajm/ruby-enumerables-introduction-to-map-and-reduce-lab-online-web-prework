@@ -38,7 +38,12 @@ end
 def reduce_to_total(source_array, starting_point)
   result = 0 
   index = 0 
-  source_array.sum
+  if starting_point < source_array[-1]
+    source_array.sum
+  else 
+    starting_point + source_array.sum
+  end
+end
   # if source_array[index] == starting_point
   #   result += source_array[index]
   #   ind = index
@@ -46,7 +51,7 @@ def reduce_to_total(source_array, starting_point)
   # else
   #   result1 = source_array.sum
   # end 
-end
+  # end
   # #binding.pry
   # new_arr = source_array[ind..-1]
   # result1 = 0 
