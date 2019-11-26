@@ -84,11 +84,12 @@ def reduce_to_all_true(source_array)
   result = true 
   while index < source_array.length do 
     if source_array[index]
-      return true
+      result
     else
-      return false
+      result = false
     end
   index += 1  
   end
+  result
 end
 
