@@ -39,7 +39,7 @@ def reduce_to_total(source_array, starting_point)
   # result = 0 
   # index = 0 
   result = 0
-  if !starting_point 
+  if starting_point == nil
     result = source_array.sum
     binding.pry
   else 
